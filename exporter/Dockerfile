@@ -1,7 +1,7 @@
 FROM node:21.5 as builder
 
 # install FoundationDB client library
-RUN wget -q https://github.com/apple/foundationdb/releases/download/7.1.27/foundationdb-clients_7.1.43-1_amd64.deb && \
+RUN wget -q https://github.com/apple/foundationdb/releases/download/7.1.43/foundationdb-clients_7.1.43-1_amd64.deb && \
     dpkg -i foundationdb-clients_7.1.43-1_amd64.deb \
     && rm foundationdb-clients_7.1.43-1_amd64.deb
 
